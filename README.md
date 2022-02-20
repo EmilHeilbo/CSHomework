@@ -16,6 +16,6 @@ Complete 1-4 with pure JavaScript first, then jQuery
 
 6.  Create a "Sprite" class representing an image on a canvas
 
-7.  Convert footnotes(<textarea data-footnote="">) to a span of footnote number with a pop-up div on click
+7.  Convert footnotes(_\<textarea data-footnote="">_) to a span of footnote number with a pop-up div on click
 
 8.  Hide an image while hovering the cursor over it
