@@ -2,17 +2,17 @@
 
 ## JavaScript
 
-Complete 1-4 with pure JavaScript first, then jQuery
+### _Complete 1-4 with pure JavaScript first, then jQuery_
 
 1.  Convert list items containing a link to anchor elements
 
 2.  Have a page with two buttons and a changeable number of input fields
 
-3.  License plate input field with validation on input
+3.  Danish license plate input field with live validation on input
 
-4.  4x4 Tile slider puzzle
+4.  4×4 Tile slider puzzle
 
-5.  Draggable image in canvas
+5.  Draggable image on canvas
 
 6.  Create a "Sprite" class representing an image on a canvas
 
