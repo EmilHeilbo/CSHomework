@@ -4,7 +4,7 @@ var dynamicFields = {
   MIN: 0,
   MAX: 5,
 
-  init: function () {
+  init: () => {
     dynamicFields.inputDiv = document.getElementById('inputFields');
     dynamicFields.amount = dynamicFields.inputDiv.getElementsByTagName('input').length;
     let buttons =
@@ -14,7 +14,7 @@ var dynamicFields = {
     buttons[1].addEventListener('click', dynamicFields.pushField);
   },
 
-  pushField: function (event) {
+  pushField: (e) => {
     let div = dynamicFields.inputDiv;
     if (dynamicFields.amount != dynamicFields.MAX) {
       let field = document.createElement('input');
@@ -22,16 +22,16 @@ var dynamicFields = {
       div.appendChild(document.createElement('br'));
       div.appendChild(field);
       dynamicFields.amount++;
-    } event.preventDefault();
+    } e.preventDefault();
   },
 
-  popField: function (event) {
+  popField: (e) => {
     let div = dynamicFields.inputDiv;
     if (dynamicFields.amount != dynamicFields.MIN) {
       div.removeChild(div.lastElementChild);
       div.removeChild(div.lastElementChild);
       dynamicFields.amount--;
-    } event.preventDefault();
+    } e.preventDefault();
   }
 };
 
