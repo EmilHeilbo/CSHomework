@@ -12,6 +12,7 @@ var listItemsToLinks = {
       }
     })
   },
+
   create_anchor: (link) => {
     let textElement = document.createTextNode(link);
     let anchorElement = document.createElement('a');
