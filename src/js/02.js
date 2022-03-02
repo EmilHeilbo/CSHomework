@@ -7,11 +7,10 @@ var dynamicFields = {
   init: () => {
     dynamicFields.inputDiv = document.getElementById('inputFields');
     dynamicFields.amount = dynamicFields.inputDiv.getElementsByTagName('input').length;
-    let buttons =
-        new Array(document.getElementById('lessFields'),
-        document.getElementById('moreFields'));
-    buttons[0].addEventListener('click', dynamicFields.popField);
-    buttons[1].addEventListener('click', dynamicFields.pushField);
+    let lessButton = document.getElementById('lessFields');
+    let moreButton = document.getElementById('moreFields');
+    lessButton.addEventListener('click', dynamicFields.popField);
+    moreButton.addEventListener('click', dynamicFields.pushField);
   },
 
   pushField: (e) => {
