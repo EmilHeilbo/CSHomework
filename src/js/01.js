@@ -15,7 +15,8 @@ var listItemsToLinks = {
   create_anchor: (link) => {
     let textElement = document.createTextNode(link);
     let anchorElement = document.createElement('a');
-    anchorElement.setAttribute('href', link)
+    anchorElement.setAttribute('href', link);
+    anchorElement.setAttribute('rel', 'noreferrer');
     anchorElement.appendChild(textElement);
 
     return anchorElement;
