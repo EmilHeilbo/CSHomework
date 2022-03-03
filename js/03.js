@@ -8,11 +8,12 @@ var licensePlate = {
   },
 
   checkInput: (e) => { e.preventDefault();
-    const REGEX = /^[A-ZÆØÅ]{1,2}\d{0,5}$/g;
+    const LETTER = /^[A-ZÆØÅ]$/g;
+    const REGEX = /^[A-ZÆØÅ]{2}\d{0,5}$/g;
     const INPUT = licensePlate.input.value.toUpperCase();
     let str = INPUT;
-    while (!str.match(REGEX) && str != "")
-      if (str.length <= 7)
+    while ((!str.match(REGEX) && !str.match(LETTER)) && str != "")
+       if (str.length <= 7)
         str = str.substring(0, str.length - 1);
       else
         str = str.substring(0, 7);
